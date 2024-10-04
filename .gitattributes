@@ -1,2 +1,49 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mackenzi's Website</title>
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="banner">
+                <h1>Mackenzi's Portfolio</h1>
+            </div>
+
+            <nav>
+                <h4>
+                <a class="button" href="assignment01.html">Home</a>
+                <a class="button" href="about_me.html">About Me</a>
+                <a class="button" href="feedback.html">Projects</a>
+                <a class="button" href="contact.html">Contact Me</a>
+                </h4>
+            </nav>
+
+            <article>
+                <h2>Welcome to my page!</h2>
+                <p>This website was made with the use of HTML5 and CSS3.</p>
+
+            </article>
+        </header>
+
+        <div class="clear"></div>
+        <div id="footer">
+            <nav>
+                <h4>
+                <a class="button" href="assignment01.html">Home</a>
+                <a class="button" href="about_me.html">About Me</a>
+                <a class="button" href="projects.html">Projects</a>
+                <a class="button" href="contact.html">Contact Me</a>
+                </h4>
+            </nav>
+            <h6>Contact me at: mackenzi.burke@ontariotechu.net</h6>
+            <h6>Copyright 2024 by Mackenzi Burke</h6>
+        </div>
+    </div>
+</body>
+
+</html>
