@@ -12,11 +12,11 @@ body {
 #wrapper {
     width: 85%;
     height: auto;
+    min-height: 100vh;
+    /*stretches wrapper to bottom of page regardless of the amount of content on the page*/
     margin: 25px auto;
     background-color: #D9C2AD;
     border-radius: 12px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
 #banner {
@@ -26,20 +26,20 @@ body {
     color: #D9C2AD;
     padding: 70px 0;
     border-bottom: 8px solid #8C4A32;
+    border-top: 8px solid #8C4A32;
 }
 
 #left-column {
     float: left;
-    width: 40%;
+    width: 50%;
     background-color: #D9C2AD;
     padding: 20px;
     box-sizing: border-box;
-    border-right: 1px solid #BF8360;
 }
 
 #right-column {
-    float: left;
-    width: 60%;
+    float: right;
+    width: 50%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -59,7 +59,6 @@ video {
     border-radius: 5px;
     border: 2px solid #8C4A32;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -78,6 +77,7 @@ button:hover {
     background-color: #011826;
     color: #F2F2F2;
     padding: 10px 20px;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
@@ -92,6 +92,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    /*lists nav buttons horizontally*/
     margin-right: 10px;
 }
 
@@ -108,15 +109,167 @@ nav ul li {
     overflow: hidden;
 }
 
+.box1 {
+    height: 300px;
+    width: 300px;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+    border-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #A65341;
+    overflow: hidden;
+}
+
 .box img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: auto;
     border-radius: 5px;
     object-fit: contain;
+    max-width: 100%;
 }
 
 figcaption {
     text-align: center;
     color: #F2F2F2;
     margin-top: 10px;
+}
+
+@media only screen and (max-width : 480px) {
+    body {
+        background: linear-gradient(to bottom, #D9C2AD, #8C4A32);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #011826;
+        padding: 0;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    #wrapper {
+        width: 85%;
+        height: auto;
+        min-height: 100vh;
+        /*stretches wrapper to bottom of page regardless of the amount of content on the page*/
+        margin: 25px auto;
+        background-color: #D9C2AD;
+        border-radius: 12px;
+    }
+
+    #banner {
+        width: 100%;
+        text-align: center;
+        background-color: #011826;
+        color: #D9C2AD;
+        padding: 70px 0;
+        border-bottom: 8px solid #8C4A32;
+        border-top: 8px solid #8C4A32;
+    }
+
+    #left-column {
+        float: left;
+        width: 50%;
+        background-color: #D9C2AD;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #right-column {
+        float: right;
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #header {
+        background: #011826;
+    }
+
+    h6 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+        border: 2px solid #8C4A32;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: #011826;
+        color: #F2F2F2;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #8C4A32;
+    }
+
+    .nav-button {
+        background-color: #011826;
+        color: #F2F2F2;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .nav-button:hover {
+        background-color: #8C4A32;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        /*lists nav buttons horizontally*/
+        margin-right: 10px;
+    }
+
+    .box {
+        height: 300px;
+        width: 300px;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 10px;
+        border-top: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #A65341;
+        overflow: hidden;
+    }
+
+    .box1 {
+        height: 300px;
+        width: 300px;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 10px;
+        border-top: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #A65341;
+        overflow: hidden;
+    }
+
+    .box img {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+        color: #F2F2F2;
+        margin-top: 10px;
+    }
 }
